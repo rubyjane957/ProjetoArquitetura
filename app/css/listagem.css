@@ -1,0 +1,36 @@
+main{
+
+    padding-top: 15px;
+
+    div{
+        width: 80%;
+        margin: auto;
+
+        table{
+            width: 100%;
+            border: 0.5px solid rgb(56, 4, 56);
+            border-collapse: collapse;
+            
+            h1{
+                margin: 15px;
+            }
+
+            th, td{
+                padding: 5px;
+            }
+
+            td:last-child{
+                display: flex;
+                justify-content: center;
+
+                button{
+                    margin: 2px;
+                    background-color: transparent;
+                    border: 0.2px solid rgb(56, 4, 56);
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
