@@ -2,6 +2,8 @@
 import { projeto } from  '../../../database/tabelas';
 import { redirect } from 'next/navigation';
 
+import "../../css/cadastro.css";
+
 async function InsereProjeto(formData) {
     'use server';
     const dados = {
@@ -22,7 +24,7 @@ function TelaNovoProjeto() {
             <label htmlFor="Valor">Valor</label>
             <input type="number" name="Valor"></input> <br></br>
 
-            <button>Cadastrar</button>
+            <button className='bt-Classico'>Cadastrar</button>
         </form>
     );
 }

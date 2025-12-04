@@ -2,6 +2,8 @@
 import { categoria } from '../../../database/tabelas';
 import { redirect } from 'next/navigation';
 
+import "../../css/cadastro.css";
+
 async function CadastrarCategoria(formData) {
     'use server';
     const dados = {
@@ -18,7 +20,7 @@ function TelaNovaCategoria() {
         <label htmlFor="Nome_Categoria">Nome da Categoria</label>
         <input type="string" name="nome_categoria"></input> <br></br>
 
-        <button>Cadastrar</button>
+        <button className='bt-Classico'>Cadastrar</button>
         </form>
     );
 }

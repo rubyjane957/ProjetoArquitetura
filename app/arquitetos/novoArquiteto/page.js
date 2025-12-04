@@ -2,6 +2,8 @@
 import { arquiteto } from '../../../database/tabelas';
 import { redirect } from 'next/navigation';
 
+import "../../css/cadastro.css";
+
 async function InsereArquiteto(formData){
     'use server';
     const dados = {
@@ -23,7 +25,7 @@ function TelaNovoArquiteto(){
             <label htmlFor="Especializacao">Especialização</label> <br></br>
             <input type="text" name="especializacao"></input> <br></br>
         
-            <button>Cadastrar</button>
+            <button className='bt-Classico'>Cadastrar</button>
         </form>
     );
 }

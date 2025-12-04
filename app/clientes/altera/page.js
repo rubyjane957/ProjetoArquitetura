@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation';
 import { cliente } from '../../../database/tabelas';
 
+import "../../css/cadastro.css";
+
 async function AlteraCli(formData) {
     'use server';
 
@@ -21,7 +23,7 @@ async function TelaAlteraCliente({ searchParams }) {
     const id = searchParams.id;
     const cli = await cliente.findByPk(id);
     return (
-        <>
+        <div>
             <h>Alterando o cliente</h>
                 <form action={AlteraCli}>
                     <input type="hidden" name="id" defaultValue={cli.id}></input>
@@ -34,7 +36,7 @@ async function TelaAlteraCliente({ searchParams }) {
 
                     <button>Salvar</button>
                 </form>
-        </>
+        </div>
     );
 }
 

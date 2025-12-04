@@ -2,6 +2,8 @@
 import { agendamento } from '../../../database/tabelas';
 import { redirect } from 'next/navigation';
 
+import "../../css/cadastro.css";
+
 async function CadastroAgendamento(formData) {
     'use server';
     const dados = {
@@ -14,16 +16,18 @@ async function CadastroAgendamento(formData) {
 
 function TelaNovoAgendamento() {
     return (
-        <form action={CadastroAgendamento}>
+        <div>
+            <form action={CadastroAgendamento}>
 
-            <label htmlFor="Horario">Horário</label>
-            <input type="time" name="Horario"></input> <br></br>
+                <label htmlFor="Horario">Horário: </label>
+                <input type="time" name="Horario"></input> <br></br>
 
-            <label htmlFor="Data">Data</label>
-            <input type="date" name="Data"></input> <br></br> 
+                <label htmlFor="Data">Data: </label>
+                <input type="date" name="Data"></input> <br></br> 
 
-            <button>Cadastrar</button>
-        </form>
+            <button className='bt-Classico'>Cadastrar</button>
+            </form>
+        </div>
     );
 }
 

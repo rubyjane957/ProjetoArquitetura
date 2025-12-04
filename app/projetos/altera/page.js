@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation';
 import { projeto } from '../../../database/tabelas';
 
+import "../../css/cadastro.css";
+
 async function AlteraProj(formData) {
     'use server';
 
@@ -21,7 +23,7 @@ async function TelaAlteraProjeto({ searchParams }) {
     const id = searchParams.id;
     const proj = await projeto.findByPk(id);
     return (
-        <>
+        <div>
             <h>Alterando o projeto</h>
                 <form action={AlteraProj}>
                     <input type="hidden" name="id" defaultValue={proj.id}></input>
@@ -35,7 +37,7 @@ async function TelaAlteraProjeto({ searchParams }) {
 
                     <button>Salvar</button>
                 </form>
-        </>
+        </div>
     );
 }
 

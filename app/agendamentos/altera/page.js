@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation';
 import { agendamento } from '../../../database/tabelas';
 
+import "../../css/cadastro.css";
+
 async function AlteraAgdm(formData) {
     'use server';
 
@@ -21,7 +23,7 @@ async function TelaAlteraAgendamento({ searchParams }) {
     const id = searchParams.id;
     const agdm = await agendamento.findByPk(id);
     return (
-        <>
+        <div>
             <h>Alterando o agendamento</h>
                 <form action={AlteraAgdm}>
                     <input type="hidden" name="id" defaultValue={agdm.id}></input>
@@ -35,7 +37,7 @@ async function TelaAlteraAgendamento({ searchParams }) {
                     <button>Salvar</button>
                 </form>
 
-        </>
+        </div>
     );
 }
 

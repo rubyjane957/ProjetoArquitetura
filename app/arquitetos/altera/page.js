@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation';
 import { arquiteto } from '../../../database/tabelas';
 
+import "../../css/cadastro.css";
+
 async function AlteraArq(formData) {
     'use server';
 
@@ -21,7 +23,7 @@ async function TelaAlteraArquiteto({ searchParams }) {
     const id = searchParams.id;
     const arq = await arquiteto.findByPk(id);
     return (
-        <>
+        <div>
             <h>Alterando o arquiteto</h>
                 <form action={AlteraArq}>
                     <input type="hidden" name="id" defaultValue={arq.id}></input>
@@ -37,7 +39,7 @@ async function TelaAlteraArquiteto({ searchParams }) {
                 </form>
 
 
-        </>
+        </div>
     );
 }
 

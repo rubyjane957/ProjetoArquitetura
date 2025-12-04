@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation';
 import { categoria } from '../../../database/tabelas';
 
+import "../../css/cadastro.css";
+
 async function AlteraCat(formData) {
     'use server';
 
@@ -18,7 +20,7 @@ async function TelaAlteraCategoria({ searchParams }) {
     const id = searchParams.id;
     const cat = await categoria.findByPk(id);
     return (
-        <>
+        <div>
             <h>Alterando a Categoria</h>
                 <form action={AlteraCat}>
                     <input type="hidden" name="id" defaultValue={cat.id}></input>
@@ -28,7 +30,7 @@ async function TelaAlteraCategoria({ searchParams }) {
            
                     <button>Salvar</button>
                 </form>
-        </>
+        </div>
     );
 }
 
