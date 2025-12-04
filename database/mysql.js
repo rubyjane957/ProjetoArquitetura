@@ -1,4 +1,17 @@
 import { Sequelize } from "sequelize";
+
+import pg from 'pg';
+const mysql = new Sequelize({
+    dialect: 'postgres',
+    dialectModule: pg,
+    host: 'dpg-d4otvh24i8rc73b0mvrg-a',
+    port: '5432',
+    database: 'souzaarquitetura', 
+    username: 'souzaarquitetura_user', //usuário do mysql
+    password: 'rooMZVCAZwWeyeNKeizvlIGWFH8cnETBNygt' //senha do mysql
+});
+
+/*
 import mysql2 from 'mysql2';
 
 const mysql = new Sequelize({
@@ -10,6 +23,6 @@ const mysql = new Sequelize({
     username: 'root', //usuário do mysql
     password: 'root' //senha do mysql
 });
-
+*/
 export default mysql;
 
