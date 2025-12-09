@@ -5,6 +5,19 @@ nav{
     align-items: center;
 }
 
+.logo{
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    width: 80px; 
+    height: auto; 
+    z-index: 1000; 
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out; /* Adiciona uma transição suave */
+    opacity: 1; /* Começa visível */
+}
+
+
 a:link{
     color: rgb(183, 146, 202);
     text-decoration: none;

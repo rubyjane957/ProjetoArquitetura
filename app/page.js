@@ -6,6 +6,7 @@ function Home() {
         <div>
           <h1 style = {style}>Bem-vindo ao Souza Arquitetura</h1>
           <p style={{color: 'lilac', backgroundColor:'soft purple'}}>E</p>
+          <img src= "logo-removebg-preview.png" id= "logo"></img>
         </div>
       );
 }
