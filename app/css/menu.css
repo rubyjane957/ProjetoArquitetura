@@ -7,14 +7,12 @@ nav{
 
 .logo{
     position: fixed; 
-    bottom: 30px; 
-    right: 30px; 
-    width: 80px; 
-    height: auto; 
-    z-index: 1000; 
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out; /* Adiciona uma transição suave */
-    opacity: 1; /* Começa visível */
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    z-index: 2000;
 }
 
 
