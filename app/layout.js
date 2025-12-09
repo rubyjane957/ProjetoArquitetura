@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer>
-          <p>LPII 27/11/2025</p>
+          <p>©2025 Souza Arquitetura. Todos os direitos reservados.</p>
         </footer>
        </body>
     </html>

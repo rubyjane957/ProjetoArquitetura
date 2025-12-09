@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
           <h1 style = {style}>Bem-vindo ao Souza Arquitetura</h1>
-          <p style={{color: 'lilac', backgroundColor:'soft purple'}}>Este é um exemplo de página inicial.</p>
+          <p style={{color: 'lilac', backgroundColor:'soft purple'}}>E</p>
         </div>
       );
 }

@@ -7,8 +7,8 @@ const mysql = new Sequelize({
     host: 'dpg-d4otvh24i8rc73b0mvrg-a',
     port: '5432',
     database: 'souzaarquitetura', 
-    username: 'souzaarquitetura_user', //usuário do mysql
-    password: 'MZVCAZwWeyeNKeizvlIGWFH8cnETBNyg' //senha do mysql
+    username: 'souzaarquitetura_user', 
+    password: 'MZVCAZwWeyeNKeizvlIGWFH8cnETBNyg' 
 });
 
 /*
