@@ -3,7 +3,8 @@ import "../app/css/menu.css";
 function Menu() {
     return(
         <nav>
-            <div>
+            <div class="logoDiv">
+                <div class="logo"></div>
                 <h1>Souza Arquitetura</h1>
             </div>
             
