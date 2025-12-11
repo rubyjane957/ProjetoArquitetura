@@ -35,6 +35,11 @@ footer{
 }
 
 .HomeDiv{
+    display: flex;
+    gap: 100px;
+}
+
+.Foto{
     width: auto;
     height: auto;
     background-image: url("../../app/UFV1.jpg"); 

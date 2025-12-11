@@ -12,7 +12,9 @@ function Home() {
             <p style={{color: 'lilac', backgroundColor:'soft purple'}}>Fundado pela arquiteta Gabriele Souza, a empresa rapidamente se destacou por sua abordagem personalizada e um compromisso inabalável com a excelência.</p>
           </header>
           <body>
-            <div class="HomeDiv"></div>           
+            <div class="HomeDiv">
+              <div class="Foto"></div>
+            </div>           
           </body>
 
         </div>
