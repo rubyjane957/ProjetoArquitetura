@@ -8,7 +8,7 @@ nav{
 
 .logoDiv {
     display: flex;
-    gap: 10px;
+    gap: 60px;
 }
 
 .logo {
@@ -16,7 +16,6 @@ nav{
     height: 50px;
     background-image: url("../../componentes/LogoNovaSFundo.png"); 
     background-size: cover;
-    border-radius: 4px;
 }
 
 
