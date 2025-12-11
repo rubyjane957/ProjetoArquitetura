@@ -8,6 +8,7 @@ function Home() {
         <div>
           <h1 style = {style}>Bem-vindo ao Souza Arquitetura</h1>
           <p style={{color: 'lilac', backgroundColor:'soft purple'}}>teste</p>
+          
         </div>
       );
 }
