@@ -34,6 +34,14 @@ footer{
     }
 }
 
+.HomeDiv{
+    width: auto;
+    height: auto;
+    background-image: url("../../app/UFV1.jpg"); 
+    background-size: cover;
+}
+
+
 .bt-Classico{
     padding: 8px;
     margin: 2px;
