@@ -5,7 +5,8 @@ function Menu() {
         <nav>
             <div class="logoDiv">
                 <div class="logo"></div>
-                <h1>Souza Arquitetura</h1>
+                <h1>Souza Ateliê Arquitetônico
+                </h1>
             </div>
             
             <div>
